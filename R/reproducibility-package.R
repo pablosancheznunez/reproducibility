@@ -1,4 +1,4 @@
-#' researchreproducibility: reproducibility audits of projects and articles
+#' reproducibility: reproducibility audits of projects and articles
 #'
 #' Two kinds of audit, both describing *conditions* for reproducibility, not
 #' whether a result was reproduced:

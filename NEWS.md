@@ -1,4 +1,4 @@
-# researchreproducibility 0.1.0
+# reproducibility 0.1.0
 
 * First release (prototype): project audit against a 14-item checklist with
   evidence and references, R package detection, HTML and JSON reports,

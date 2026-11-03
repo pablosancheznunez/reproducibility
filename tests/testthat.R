@@ -1,4 +1,4 @@
 library(testthat)
-library(researchreproducibility)
+library(reproducibility)
 
-test_check("researchreproducibility")
+test_check("reproducibility")

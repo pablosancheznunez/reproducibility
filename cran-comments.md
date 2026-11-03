@@ -1,6 +1,6 @@
 ## Submission
 
-First submission of researchreproducibility.
+First submission of reproducibility.
 
 ## Test environments
 

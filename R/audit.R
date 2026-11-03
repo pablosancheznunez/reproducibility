@@ -19,7 +19,7 @@ skip_dirs <- "(^|/)(\\.git|renv/library|renv/staging|node_modules|\\.Rproj\\.use
 #' @examples
 #' rr_checklist()[, c("id", "critical")]
 rr_checklist <- function() {
-  x <- utils::read.csv(system.file("extdata", "checklist.csv", package = "researchreproducibility"),
+  x <- utils::read.csv(system.file("extdata", "checklist.csv", package = "reproducibility"),
                        stringsAsFactors = FALSE, encoding = "UTF-8")
   x$critical <- as.logical(x$critical)
   x
@@ -163,7 +163,7 @@ rr_audit <- function(path = ".", large_file_mb = 50) {
   structure(list(checks = cl, path = normalizePath(path, winslash = "/"),
                  project_type = if (is_package) "r-package" else "research-project", audited_at = utc_now(),
                  n_files = length(files), n_code_files = length(code),
-                 version = as.character(utils::packageVersion("researchreproducibility"))),
+                 version = as.character(utils::packageVersion("reproducibility"))),
             class = "rr_audit")
 }
 
@@ -221,7 +221,7 @@ rr_report <- function(x, path) {
     ".met td:nth-child(3){color:#1b7a3d}.not_met td:nth-child(3){color:#b42318;font-weight:600}",
     ".note{background:#eef3fb;border-left:4px solid #3267b7;padding:.8rem 1rem}</style></head><body>",
     "<h1>Reproducibility audit</h1><p>", esc(x$path), " &middot; ", x$n_files, " files, ", x$n_code_files,
-    " code files &middot; audited ", x$audited_at, " with researchreproducibility ", x$version, "</p>",
+    " code files &middot; audited ", x$audited_at, " with reproducibility ", x$version, "</p>",
     "<p class=\"note\">This audit checks the <em>conditions</em> for reproducing the project from its files. ",
     "It does not run the analysis, so it cannot show that the results reproduce.</p>",
     "<table><tr><th>Category</th><th>Item</th><th>Status</th><th>Evidence</th><th>Reference</th></tr>", rows,

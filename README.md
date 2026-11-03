@@ -1,4 +1,4 @@
-# researchreproducibility
+# reproducibility
 
 Reproducibility audits of research projects and articles. Both describe the *conditions* for reproducing research; neither reruns an analysis.
 
@@ -8,8 +8,8 @@ Status: **prototype**. Part of the [metascience](https://github.com/pablosanchez
 
 ```r
 # install.packages("remotes")
-remotes::install_github("pablosancheznunez/researchreproducibility")
-library(researchreproducibility)
+remotes::install_github("pablosancheznunez/reproducibility")
+library(reproducibility)
 
 a <- rr_audit("path/to/project")
 a

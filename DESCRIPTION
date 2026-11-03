@@ -1,5 +1,5 @@
-Package: researchreproducibility
-Title: Reproducibility Audits of Research Projects and Articles
+Package: reproducibility
+Title: Audit the Reproducibility of Research Projects and Articles
 Version: 0.1.0
 Authors@R:
     person("Pablo", "Sánchez-Núñez", email = "psancheznunez@outlook.com",
@@ -17,8 +17,8 @@ Description: Audits the conditions for reproducing research. For a
     "no". Writes HTML and JSON reports, creates reproducible project
     skeletons and a 'GitHub Actions' workflow that runs the audit.
 License: MIT + file LICENSE
-URL: https://github.com/pablosancheznunez/researchreproducibility
-BugReports: https://github.com/pablosancheznunez/researchreproducibility/issues
+URL: https://github.com/pablosancheznunez/reproducibility
+BugReports: https://github.com/pablosancheznunez/reproducibility/issues
 Depends:
     R (>= 4.1.0)
 Imports:
