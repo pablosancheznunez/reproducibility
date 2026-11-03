@@ -3,7 +3,7 @@ url: https://pablosancheznunez.com/reproducibility/
 template:
   bootstrap: 5
   bslib:
-    primary: "#1f6f4a"
+    primary: "#4d7c0f"
 
 authors:
   Pablo Sánchez-Núñez:
