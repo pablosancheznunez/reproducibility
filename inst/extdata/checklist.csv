@@ -1,0 +1,15 @@
+id,category,item,rationale,reference,critical
+readme,documentation,A README explains what the project is and how to run it,Without instructions nobody else can rerun the work,The Turing Way: Guide for Reproducible Research,TRUE
+license,reuse,The project has a licence,Reuse of code and data requires permission stated in a licence,FAIR4RS principle R1.1,TRUE
+citation,reuse,Citation metadata are provided (CITATION.cff; codemeta.json; .zenodo.json),Credit and persistent identification of research software,Software Citation Principles (Smith et al. 2016); FAIR4RS F1,FALSE
+version_control,provenance,The project is under version control,Records which version of the code produced which result,The Turing Way: Version Control,FALSE
+dependencies_declared,environment,Software dependencies are declared,The analysis cannot run without knowing what it needs,FAIR4RS principle R2,TRUE
+dependencies_pinned,environment,Dependency versions are pinned (lock file),New package versions can change results silently,The Turing Way: Reproducible Environments,FALSE
+container,environment,A container or environment specification is provided (Dockerfile; devcontainer; Binder),Recreates the whole computational environment,The Turing Way: Containers,FALSE
+pipeline,workflow,A single entry point or pipeline runs the analysis (Makefile; _targets.R; Snakefile; dvc.yaml; run_all),Removes undocumented manual steps and their order,The Turing Way: Research Workflows,FALSE
+ci,workflow,Continuous integration runs the code automatically,Detects breakage when code or dependencies change,The Turing Way: Continuous Integration,FALSE
+data_available,data,Data are included or referenced by a persistent identifier or repository link,Results cannot be checked without the data,TOP Guidelines: Data Transparency,TRUE
+data_documented,data,Data are documented (codebook; data dictionary; data README),Variables must be understood to be reused,FAIR principle R1 (rich metadata),FALSE
+no_absolute_paths,code,Code does not depend on absolute paths or setwd(),Absolute paths break on every other computer,The Turing Way: Reproducible Research (portable code),TRUE
+seeds_set,code,Random number seeds are set where randomness is used,Simulations and resampling give different results otherwise,The Turing Way: Reproducible Research,FALSE
+no_large_files,data,No very large files are kept in the code repository,Large data belong in a data repository with an identifier,The Turing Way: Version Control (large files),FALSE

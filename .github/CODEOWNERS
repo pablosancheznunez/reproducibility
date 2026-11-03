@@ -1,0 +1,7 @@
+# Paths whose changes need the maintainer's review: detector rules,
+# checklist and expected outputs.
+/R/detect.R @pablosancheznunez
+/R/audit.R @pablosancheznunez
+/inst/extdata/ @pablosancheznunez
+/tests/ @pablosancheznunez
+/.github/ @pablosancheznunez

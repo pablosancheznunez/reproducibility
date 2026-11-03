@@ -1,0 +1,32 @@
+Package: researchreproducibility
+Title: Reproducibility Audits of Research Projects and Articles
+Version: 0.0.0.9000
+Authors@R:
+    person("Pablo", "Sánchez-Núñez", email = "psancheznunez@outlook.com",
+           role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-7845-9506"))
+Description: Audits the conditions for reproducing research. For a project
+    directory, checks documentation, licence, citation metadata, declared
+    and pinned dependencies, containers, pipelines, continuous integration,
+    data availability and documentation, absolute paths, random seeds and
+    large files, each with its evidence and the standard it comes from. For
+    an article, detects data and code availability, availability
+    statements, preregistration and shared materials in the full text with
+    explicit, versioned rules; a text that cannot be read is unverifiable,
+    never "no". Writes HTML and JSON reports, creates reproducible project
+    skeletons and a GitHub Actions workflow that runs the audit.
+License: MIT + file LICENSE
+URL: https://github.com/pablosancheznunez/researchreproducibility
+BugReports: https://github.com/pablosancheznunez/researchreproducibility/issues
+Depends:
+    R (>= 4.1.0)
+Imports:
+    jsonlite,
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.1
