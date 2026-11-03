@@ -1,0 +1,22 @@
+url: https://pablosancheznunez.com/reproducibility/
+
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#1f6f4a"
+
+authors:
+  Pablo Sánchez-Núñez:
+    href: https://pablosancheznunez.com
+
+home:
+  links:
+  - text: All R packages
+    href: https://pablosancheznunez.com/r-packages/
+  - text: Author website
+    href: https://pablosancheznunez.com
+
+navbar:
+  structure:
+    left: [intro, reference, news]
+    right: [search, github]
